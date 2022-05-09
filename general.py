@@ -1,6 +1,7 @@
 import rpyc
 from threading import Thread
 
+
 class General(Thread):
     def __init__(self, id, type="secondary", majority="undefined", state="NF"):
         Thread.__init__(self)
