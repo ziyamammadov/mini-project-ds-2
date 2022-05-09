@@ -66,11 +66,10 @@ def sendOrder(order):
         generals[primary_gid].majority = order
         broadcastOrder(order)
         responses, n_failure = generals[primary_gid].verifyOrder()
-        c_ans = 0
-        for ans in responses:
-            if ans == order:
-                c_ans += 1
-        count_verified_responses = c_ans
+        count_verified_responses = 0
+        for resp in responses:
+            if resp == order:
+                count_verified_responses += 1
         for g in generals.values():
             print(f"G{g.id}, {g.type}, majority={g.majority}, state={g.state}")
         if n_failure == 0:

@@ -1,0 +1,1 @@
+python3 general-byzantine.py $1
