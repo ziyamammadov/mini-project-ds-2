@@ -5,7 +5,7 @@ Mini project for the Distributed Systems course where *Generals Byzantine* algor
 ## To run the program
 `/Generals_Byzantine_program.sh N` where **N** is amount of processes
 ## Program video
-https://github.com/ziyamammadov/mini-project-ds-2/blob/main/video.mov
+https://github.com/ziyamammadov/mini-project-ds-2/blob/main/video.mp4
 ## Commands
 ```
 ./Generals_Byzantine_program.sh 4
