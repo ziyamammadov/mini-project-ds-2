@@ -25,7 +25,7 @@ class GB(rpyc.Service):
         responses = []
         n_faulty = 0
         id = primary_gid + 1
-        while primary_gid + 1 <= len(ids) + 1:
+        while primary_gid <= len(ids):
             if id in generals:
                 if generals[id].state == "F":
                     n_faulty += 1
